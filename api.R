@@ -11,5 +11,5 @@ function(n) {
   data <- rnorm(n)
   p <- ggplot(data.frame(x = data), aes(x)) + geom_histogram(binwidth = 0.5)
   ggsave("www/histograma.png", plot = p)
-  list(src = "https://pruebaheroku.herokuapp.com/histograma.png")
+  list(src = "https://prueba.herokuapp.com/histograma.png")
 }
