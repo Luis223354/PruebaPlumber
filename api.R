@@ -10,8 +10,6 @@ function(n) {
   n <- as.numeric(n)
   data <- rnorm(n)
   p <- ggplot(data.frame(x = data), aes(x)) + geom_histogram(binwidth = 0.5)
-  ggsave("histograma.png", plot = p)
-  list(src = "histograma.png")
+  ggsave("www/histograma.png", plot = p)
+  list(src = "https://pruebaheroku.herokuapp.com/histograma.png")
 }
-
-
